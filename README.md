@@ -32,9 +32,6 @@ Example
 numpy, 
 scipy
 
-# Citation
-Rich-Club organization: an important determinant of functional outcome after acute ischemic stroke
+# Citations
+Schirmer et al. "Rich-Club organization: an important determinant of functional outcome after acute ischemic stroke." BioRxiv (2019): 545897.
 
-Markus D Schirmer, Sofia Ira Ktena, Marco J Nardin, Kathleen L Donahue, Anne-Katrin Giese, Mark R Etherton, Ona Wu, Natalia S Rost
-
-bioRxiv 545897; doi: https://doi.org/10.1101/545897 

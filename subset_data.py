@@ -10,7 +10,7 @@ As input the code requires
 	a) phenotype file (only numerical values, i.e. please convert information such as sex (M/F) into 0/1)
 	b) phenotype list to be used for comparison (see example phenotype_list.csv file)
 	c) Number of subsets
-	
+
 Output
 CSV file with added column including subset IDs.
 
@@ -20,7 +20,6 @@ Execution
 Example
 ./subset_data.py phenotypes.csv phenotypes_split.csv 5 phenotype_list.csv
  
-
 :Requires:
 numpy
 scipy

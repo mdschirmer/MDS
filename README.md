@@ -1,5 +1,5 @@
 # Summary
-Program to create subsets of a data sets that are likely to be not statistically significantly different.
+Multivariate Data Split - Program to create subsets of a data sets that are likely to be not statistically significantly different.
 
 # Description
 Subsets are picked based on the psuedo gower distance, where the distance between subjects picked in each iteration is minimized.

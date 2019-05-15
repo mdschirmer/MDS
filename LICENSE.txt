@@ -1,10 +1,10 @@
-/** Subsetting multivariate data (SMD)
+/** Subsetting multivariate data (MDS)
  * 
  * Author: Markus D. Schirmer, http://www.markus-schirmer.com
  
- * Copyright (c) 2019 SMD <software@markus-schirmer.com>
+ * Copyright (c) 2019 MDS <software@markus-schirmer.com>
  *
- * SMD is licensed under the MIT License:
+ * MDS is licensed under the MIT License:
  * http://www.opensource.org/licenses/mit-license.php
  *
  *     Permission is hereby granted, free of charge, to any person obtaining 

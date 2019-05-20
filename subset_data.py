@@ -195,6 +195,8 @@ def main(argv):
 	num_groups = int(argv[3])
 	if len(argv)<5:
 		key_file = 'phenotype_list.csv'
+	else:
+		key_file = argv[4]
 
 	# load phenotype list and data
 	key_list = load_key_list(key_file)

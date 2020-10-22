@@ -39,8 +39,8 @@ scipy
 #=============================================
 __author__ = 'mds'
 __contact__ = 'software@markus-schirmer.com'
-__date__ = '2019-05'
-__version__ = '0.1'
+__date__ = '2020-10'
+__version__ = '0.2'
 
 #=============================================
 # Import statements

@@ -32,7 +32,7 @@ scipy
 :ORGANIZATION: MGH/HMS
 :CONTACT: software@markus-schirmer.com
 :SINCE: 2019-05-15
-:VERSION: 0.1
+:VERSION: 0.2
 """
 #=============================================
 # Metadata
@@ -154,11 +154,11 @@ def load_csv(file):
 		phenos = {}
 		for idx, row in enumerate(reader):
 			phenos[idx] = {}
-			for ii, item in enumerate(row):
+			for ii, item in enumerate(header):
 				try: 
-					phenos[idx][header[ii]] = float(item)
+					phenos[idx][header[ii]] = float(row[ii])
 				except:
-					phenos[idx][header[ii]] = item
+					phenos[idx][header[ii]] = row[ii]
 	return phenos
 
 def load_key_list(file):
@@ -211,15 +211,17 @@ def main(argv):
 
 	# write output
 	with open(outfile,'w') as fid:
-		fid.write('Group,')
+		out_str = 'Group'
 		for key in data[list(data.keys())[0]].keys():
-			fid.write('%s,' %key)
+			out_str = out_str + ',%s' %key
+		fid.write(out_str)
 		fid.write('\n')
 		for ii, group in enumerate(output):
 			for sub in group:
-				fid.write('Set_%i,' %ii)
+				out_str = 'Set_%i' %ii
 				for key in data[sub].keys():
-					fid.write('%s,' %(data[sub][key]))
+					out_str = out_str + ',%s' %(data[sub][key])
+				fid.write(out_str)
 				fid.write('\n')
 
 if __name__ == "__main__":
